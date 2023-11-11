@@ -1,7 +1,5 @@
-import "./index.css";
-
-function App() {
-  return <div>123</div>;
+import Logo from "./Logo";
+import PackingList from "./PackingList";
+export default function App() {
+  return <Logo />;
 }
-
-export default App;
