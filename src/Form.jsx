@@ -16,6 +16,7 @@ export default function Form({ setNewItem }) {
     };
 
     setNewItem(newItem);
+
     setDesc("");
     setQuantity(1);
   }
