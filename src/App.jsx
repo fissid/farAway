@@ -15,11 +15,14 @@ export default function App() {
     setInitialItems((prev) => [...prev, newItem]);
     // console.log(initialItems);
   }
+  function deleteItemHandler(id) {
+    setInitialItems((prev) => prev.filter((each) => each.id !== id));
+  }
   return (
     <div className="app">
       <Logo />
       <Form onSetNewItem={setInitialItemsForForm} />
-      <PackingList initialItems={initialItems} />
+      <PackingList initialItems={initialItems} toDeleteItem={deleteItemHandler} />
       <Stats />
     </div>
   );
