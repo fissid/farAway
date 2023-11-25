@@ -20,6 +20,7 @@ export default function App() {
   function packedItemHandler(id) {
     setInitialItems((prev) => prev.map((each) => (each.id === id ? { ...each, packed: !each.packed } : each)));
   }
+
   return (
     <div className="app">
       <Logo />
