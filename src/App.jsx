@@ -5,11 +5,7 @@ import PackingList from "./PackingList";
 import { useState } from "react";
 
 export default function App() {
-  const [initialItems, setInitialItems] = useState([
-    { id: 1, description: "Passports", quantity: 2, packed: false },
-    { id: 2, description: "Socks", quantity: 12, packed: false },
-    { id: 3, description: "Charger", quantity: 1, packed: false },
-  ]);
+  const [initialItems, setInitialItems] = useState([{ id: 1, description: "Charger", quantity: 1, packed: false }]);
   const numItem = initialItems.length;
   const packedItems = initialItems.reduce(function (acc, value) {
     return acc + (value.packed ? 1 : 0);
@@ -24,11 +20,14 @@ export default function App() {
   function packedItemHandler(id) {
     setInitialItems((prev) => prev.map((each) => (each.id === id ? { ...each, packed: !each.packed } : each)));
   }
+  function resetInitialItems() {
+    setInitialItems(null);
+  }
   return (
     <div className="app">
       <Logo />
       <Form onSetNewItem={setInitialItemsForForm} />
-      <PackingList initialItems={initialItems} toDeleteItem={deleteItemHandler} toSetPackedItem={packedItemHandler} />
+      <PackingList initialItems={initialItems} toDeleteItem={deleteItemHandler} toSetPackedItem={packedItemHandler} reset={resetInitialItems} />
       <Stats length={numItem} packed={packedItems} />
     </div>
   );
