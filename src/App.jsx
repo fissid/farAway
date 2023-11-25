@@ -21,7 +21,7 @@ export default function App() {
     setInitialItems((prev) => prev.map((each) => (each.id === id ? { ...each, packed: !each.packed } : each)));
   }
   function resetInitialItems() {
-    setInitialItems(null);
+    setInitialItems([]);
   }
   return (
     <div className="app">
