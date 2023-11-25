@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-export default function Form({ setNewItem }) {
+export default function Form({ onSetNewItem }) {
   const [desc, setDesc] = useState("");
   const [quantity, setQuantity] = useState(1);
   function addHandler(e) {
@@ -13,7 +13,7 @@ export default function Form({ setNewItem }) {
       packed: false,
       id: Math.floor(Math.random() * 100),
     };
-    setNewItem(newItem);
+    onSetNewItem(newItem);
 
     setDesc("");
     setQuantity(1);

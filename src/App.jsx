@@ -18,7 +18,7 @@ export default function App() {
   return (
     <div className="app">
       <Logo />
-      <Form setNewItem={setInitialItemsForForm} />
+      <Form onSetNewItem={setInitialItemsForForm} />
       <PackingList initialItems={initialItems} />
       <Stats />
     </div>
