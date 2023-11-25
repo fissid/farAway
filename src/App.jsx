@@ -13,7 +13,7 @@ export default function App() {
 
   function setInitialItemsForForm(newItem) {
     setInitialItems((prev) => [...prev, newItem]);
-    console.log(initialItems);
+    // console.log(initialItems);
   }
   return (
     <div className="app">

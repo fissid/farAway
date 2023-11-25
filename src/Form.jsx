@@ -7,14 +7,12 @@ export default function Form({ setNewItem }) {
     e.preventDefault();
 
     if (!desc) return;
-
     const newItem = {
       description: desc,
       quantity: quantity,
       packed: false,
       id: Math.floor(Math.random() * 100),
     };
-
     setNewItem(newItem);
 
     setDesc("");
