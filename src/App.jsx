@@ -10,6 +10,10 @@ export default function App() {
     { id: 2, description: "Socks", quantity: 12, packed: false },
     { id: 3, description: "Charger", quantity: 1, packed: false },
   ]);
+  const numItem = initialItems.length;
+  const packedItems = initialItems.reduce(function (acc, value) {
+    return acc + (value.packed ? 1 : 0);
+  }, 0);
 
   function setInitialItemsForForm(newItem) {
     setInitialItems((prev) => [...prev, newItem]);
@@ -25,7 +29,7 @@ export default function App() {
       <Logo />
       <Form onSetNewItem={setInitialItemsForForm} />
       <PackingList initialItems={initialItems} toDeleteItem={deleteItemHandler} toSetPackedItem={packedItemHandler} />
-      <Stats />
+      <Stats length={numItem} packed={packedItems} />
     </div>
   );
 }
