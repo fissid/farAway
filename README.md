@@ -25,4 +25,4 @@ Please note that the primary focus of this project was on the functionality of t
 
 **Have a great trip! 🚀🌟**
 
-!TravelPal Screenshot: https://github.com/fissid/farAway/blob/86bfba5991bb3a12ae2527f1e644729dca5f676b/Capture.PNG
+FarAway Screenshot: Capture.PNG
