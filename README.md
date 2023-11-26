@@ -12,7 +12,7 @@ Streamline your travel preparations with FarAway, a React-based web app designed
 - 🗑️ **Quick Actions:** Clear the entire list or hit reset for a fresh start.
 - 📊 **Dynamic Reporting:** Real-time updates in the footer show your progress - the total number of items and the percentage prepared.
 
-## [Try the Demo] https://super-hamster-944061.netlify.app/
+## Try the Demo: https://super-hamster-944061.netlify.app/
 
 **📣 Notice:**
 Please note that the primary focus of this project was on the functionality of the React app rather than its UI design. If the UI does not meet your expectations, kindly understand that it was not the main emphasis during development.
@@ -25,5 +25,4 @@ Please note that the primary focus of this project was on the functionality of t
 
 **Have a great trip! 🚀🌟**
 
-![TravelPal Screenshot](url-to-your-screenshot.png)
-
+!TravelPal Screenshot: https://github.com/fissid/farAway/blob/86bfba5991bb3a12ae2527f1e644729dca5f676b/Capture.PNG
