@@ -25,4 +25,4 @@ Please note that the primary focus of this project was on the functionality of t
 
 **Have a great trip! 🚀🌟**
 
-FarAway Screenshot: Capture.PNG
+FarAway Screenshot: (https://github.com/fissid/farAway/blob/323ea5eb0f77e84ef25ffaf974f8204e55c9fee6/Capture.PNG)
