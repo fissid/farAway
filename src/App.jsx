@@ -23,6 +23,7 @@ export default function App() {
   function resetInitialItems() {
     window.confirm("Are you sure you want to delete all items?") && setInitialItems([]);
   }
+
   return (
     <div className="app">
       <Logo />
